@@ -1,0 +1,5 @@
+Design and code a program that reads a text file and counts the number of times each word that it contains appears 100
+Your phone number 987 654 3210 is invalid because we do not accept numbers
+YOUR youR worD WoRd outPUT alSO ExaMplE
+Some valid words are 9characters 101dalmatians don't won't
+9900 the an am 4250 ##### (23+42*14) are invalid words
