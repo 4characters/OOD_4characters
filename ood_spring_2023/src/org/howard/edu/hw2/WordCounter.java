@@ -16,7 +16,7 @@ public class WordCounter {
 		Map<String, Integer> wordsMap = new HashMap<>();
 		
 		// Specifying the location of the file
-		String filepath = "src/main/resources/file.txt";
+		String filepath = "src/main/resources/input.txt";
 		
 		System.out.println("The input text in the file is as follows:\n");
 		System.out.println("--------------------------------------------------------------------------------------------");
