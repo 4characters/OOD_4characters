@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 // Name: Manish Bhurtel (@02964727)
 
 public class WordCounter {
+	// Buffered Reader can throw the IOException
 	public static void main(String[] args) throws IOException {
 		
 		// Creating the HashMap object to store the word as key and count as value
