@@ -80,12 +80,20 @@ public class Driver {
 		}
 	}
 	
+	
 	public static void main(String[] args) throws IntegerSetException{
 		
-		Driver d = new Driver();	// This object will be used to invoke other methods inside the class
-		IntegerSet set1 = new IntegerSet(), set2 = new IntegerSet();	// Defining the integersets required in these test cases
+		Driver d = new Driver();	// This object will be used to invoke other methods inside the class		
 		
-		System.out.println("1. Testing add() method: ");
+		System.out.println("1. Testing default constructor: ");
+		System.out.println("-----------------------------");
+		IntegerSet set1 = new IntegerSet(), set2 = new IntegerSet();
+		System.out.println("Two sets are initialized to be empty sets!");
+		System.out.println("Value of set1: " + set1.toString() + " and value of set2: " + set2.toString());
+		
+		/*###########################################################################################################*/
+		
+		System.out.println("\n\n2. Testing add() method: ");
 		System.out.println("------------------------");
 
 		System.out.println("Intially, value of set1:" + set1.toString());
@@ -96,7 +104,7 @@ public class Driver {
 		
 		/*###########################################################################################################*/
 		
-		System.out.println("\n\n2. Testing clear() method: ");
+		System.out.println("\n\n3. Testing clear() method: ");
 		System.out.println("--------------------------");
 		System.out.println("Value of set1:" + set1.toString());
 		set1.clear();
@@ -104,7 +112,7 @@ public class Driver {
 		
 		/*###########################################################################################################*/
 		
-		System.out.println("\n\n3. Testing length() method: ");
+		System.out.println("\n\n4. Testing length() method: ");
 		System.out.println("---------------------------");
 		d.add_values(new Integer[] {-1,-2,0,3,2,4}, set1);
 		System.out.println("Value of set1:" + set1.toString());
@@ -112,7 +120,7 @@ public class Driver {
 		
 		/*###########################################################################################################*/
 		
-		System.out.println("\n\n4. Testing equals() method: ");
+		System.out.println("\n\n5. Testing equals() method: ");
 		System.out.println("---------------------------");
 		
 		System.out.println("Test Case #1: Both sets have same elements in same order");
@@ -133,7 +141,7 @@ public class Driver {
 		
 		/*###########################################################################################################*/
 		
-		System.out.println("\n\n5. Testing contains() method: ");
+		System.out.println("\n\n6. Testing contains() method: ");
 		System.out.println("-----------------------------");
 		
 		System.out.println("Test Case #1: Item present in the set");
@@ -144,21 +152,21 @@ public class Driver {
 		
 		/*###########################################################################################################*/
 		
-		System.out.println("\n\n6. Testing largest() method: ");
+		System.out.println("\n\n7. Testing largest() method: ");
 		System.out.println("-----------------------------");
 		System.out.println("Value of set1: " + set1.toString());
 		System.out.println("Largest value of set1: " + set1.largest());
 		
 		/*###########################################################################################################*/
 		
-		System.out.println("\n\n7. Testing smallest() method: ");
+		System.out.println("\n\n8. Testing smallest() method: ");
 		System.out.println("-----------------------------");
 		System.out.println("Value of set1 is: " + set1.toString());
 		System.out.println("Smallest value of set1: " + set1.smallest());
 		
 		/*###########################################################################################################*/
 		
-		System.out.println("\n\n8. Testing remove() method: ");
+		System.out.println("\n\n9. Testing remove() method: ");
 		System.out.println("----------------------------");
 		System.out.println("Value of set1: " + set1.toString());
 		set1.remove(-2);
@@ -166,7 +174,7 @@ public class Driver {
 		
 		/*###########################################################################################################*/
 		
-		System.out.println("\n\n9. Testing union() method (set1 u set2): ");
+		System.out.println("\n\n10. Testing union() method (set1 u set2): ");
 		System.out.println("-----------------------------------------");
 		System.out.println("Case #1: Disjoint sets (No common elements)");
 		d.add_values(new Integer[] {-1,0,2,5}, set1); 
@@ -194,7 +202,7 @@ public class Driver {
 		
 		/*###########################################################################################################*/
 		
-		System.out.println("\n\n9. Testing intersection() method (set1 n set2): ");
+		System.out.println("\n\n11. Testing intersection() method (set1 n set2): ");
 		System.out.println("------------------------------------------------");
 		System.out.println("Case #1: Disjoint sets (No common elements)");
 		d.add_values(new Integer[] {-1,0,2,5}, set1); 
@@ -222,7 +230,7 @@ public class Driver {
 		
 		/*###########################################################################################################*/
 		
-		System.out.println("\n\n10. Testing diff() method (set1 - set2): ");
+		System.out.println("\n\n12. Testing diff() method (set1 - set2): ");
 		System.out.println("------------------------------------------");
 		System.out.println("Case #1: Disjoint sets (No common elements)");
 		d.add_values(new Integer[] {-1,0,2,5}, set1); 
@@ -250,7 +258,7 @@ public class Driver {
 		
 		/*###########################################################################################################*/
 		
-		System.out.println("\n\n11. Testing isEmpty() method");
+		System.out.println("\n\n13. Testing isEmpty() method");
 		System.out.println("------------------------------");
 		System.out.println("Case #1: Non-empty set");
 		d.add_values(new Integer[] {9,4,27}, set1); 
@@ -262,7 +270,7 @@ public class Driver {
 		
 		/*###########################################################################################################*/
 		
-		System.out.println("\n\n12. Testing toString() method");
+		System.out.println("\n\n14. Testing toString() method");
 		System.out.println("--------------------------------");
 		System.out.println("set1 is the object of: "+ set1.getClass());
 		System.out.println("After invoking toString() method, we get: " + set1.toString().getClass());
