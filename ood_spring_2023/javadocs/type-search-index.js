@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"org.howard.edu.hw4","l":"Driver"},{"p":"org.howard.edu.hw4","l":"IntegerSet"}];updateSearchResults();
