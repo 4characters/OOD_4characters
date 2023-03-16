@@ -16,7 +16,7 @@ public class IntegerSetTest {
 	/**
 	 * This helper function is created to clear and add values to the IntegerSet. We have to add values at multiple places while testing, so
 	 * I created this method to avoid redundant codes. It takes an integer list and adds the values to the IntegerSet.
-	 * @param values: first integer set to compare
+	 * @param values: elements to add into the set
 	 * @param set: integer set to add_values
 	 */
 	public void clear_and_add_values(Integer[] values, IntegerSet set) {
