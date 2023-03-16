@@ -114,6 +114,10 @@ public class IntegerSetTest {
 		
 		set2.add(0);
 		assertTrue(set.equals(set2));	// 0 is added to set2, so both are equal again
+		
+		// Clearing set2 and adding same items as set but with different order
+		clear_and_add_values(new Integer[] {-5, 0, 9}, set2);
+		assertTrue(set.equals(set2));	// Same elements but different order, thus the sets are same
 	}
 	
 	/*###############################################################################################################*/
@@ -276,7 +280,7 @@ public class IntegerSetTest {
 	}
 	
 	@Test
-	@DisplayName("test smalles exception")
+	@DisplayName("test smallest exception")
 	public void testSmallest_Throws_IntegerSetException() throws IntegerSetException{
 		Throwable exception = assertThrows(IntegerSetException.class, () -> set.smallest());
 		assertEquals("Set is Empty!", exception.getMessage());	// exception's message is "Set is Empty!"
