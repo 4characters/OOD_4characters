@@ -52,7 +52,7 @@ public class IntegerRangeTest {
     
 	@Test
 	@DisplayName("test overlaps exception")
-	public void testOverlaps_Throws_EmptyRangeException() throws IntegerSetException{
+	public void testOverlaps_Throws_EmptyRangeException() throws EmptyRangeException{
 		Throwable exception = assertThrows(EmptyRangeException.class, () -> range.overlaps(null));
 		assertEquals("Range is Null!", exception.getMessage());	// exception's message is "Range is Null!"
 	}
